@@ -17,7 +17,8 @@ This is a little desktop application for Windows that allows to code and econde 
   	1-Download win_flex_bison zip file available in this repo 
   	2-Unzip the file 
   	3-Copy the directory of the folder then go to environment variables->system variables->path->edit->new and paste it there. (Note that you will need to restart the computer for it to work)
- 	 4-Execute the python script, click on "Encode" for example, choose your file and the resulting file will appear in the same folder of your origin file named "encodedFile.txt".
+ 	4-Execute the python script, click on "Encode" for example, choose your file and the resulting file will appear in the same folder of your origin file named "encodedFile.txt".
+![image](https://user-images.githubusercontent.com/107730108/209480023-c6f2843b-d21e-4e4b-94d2-fec1ea5d0cc7.png)
 
 ## Note
 The following files will appear after the execution
