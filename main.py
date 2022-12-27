@@ -8,12 +8,14 @@ import platform
 OS = platform.system()
 # LEX and C compilation
 # If you don't have defined flex as a env variable, replace the winflex argument by the path to your winflex.exe
-output = run(["winflex", "-t", "./LEXcode.l"], stdout=subprocess.PIPE)
+output = run(["winflex", "-t", "./LEXcode.l"],
+             stdout=subprocess.PIPE)
 f = open("code.c", "wb")
 f.write(output.stdout)
 f.close()
 
-output = run(["./win_flex.exe", "-t", "./LEXdecode.l"], stdout=subprocess.PIPE)
+output = run(["winflex", "-t", "./LEXdecode.l"],
+             stdout=subprocess.PIPE)
 f = open("decode.c", "wb")
 f.write(output.stdout)
 f.close()
